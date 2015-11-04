@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title xml:id="liefde">Nota's "Wat is liefde zonder verleiding"</title>
+                <author xml:id="RB">
+                    <name>Raymond Brulez</name>
+                </author>
+                <author xml:id="typist">
+                    <name>Raymond Brulez</name>
+                </author>
+                <principal xml:id="EB">
+                    <name>Elli Bleeker</name>
+                </principal>
+                <principal xml:id="DVH">
+                    <name>Dirk Van Hulle</name>
+                </principal>
+                <principal xml:id="VN">
+                    <name>Vincent Neyt</name>
+                </principal>
+                <editor xml:id="LS">
+                    <name>Lotte Stinkens</name>
+                </editor>
+                <editor xml:id="MT">
+                    <name>Maud Terryn</name>
+                </editor>
+                <funder>
+                    <name>Centre for Manuscript Genetics (UA)</name>
+                    <name>DiXiT (Digital Scholarly Editions Initial Training Network)</name>
+                    <address>
+  <addrLine>Universiteit Antwerpen (UA)</addrLine> 
+  <addrLine>Prinsstraat 13</addrLine> 
+  <addrLine>B-2000 Antwerpen</addrLine> 
+  <addrLine>Belgium</addrLine> 
+  <addrLine>tel: +32 (0)3 220 42 46</addrLine> 
+  <addrLine>email: dirk.vanhulle@ua.ac.be</addrLine> 
+  </address>
+                </funder>
+                <respStmt>
+                    <name>Dirk Van Hulle</name>
+                    <resp>Brulez Archive coordinator, encoding scheme, TEI customization</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Vincent Neyt</name>
+                    <resp>Project architecture, encoding scheme, TEI customization</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Elli Bleeker</name>
+                    <resp>text encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Lotte Stinkens</name>
+                    <resp>BA student DH, text encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Maud Terryn</name>
+                    <resp>BA student DH, text encoding</resp>
+                </respStmt>
+            </titleStmt>
+            <extent/>
+            <publicationStmt>
+                <authority>Centre for Manuscript Genetics (University of Antwerp)</authority>
+                <pubPlace>Antwerp</pubPlace>
+                <availability status="restricted">
+                    <p>Not to be distributed outside the project</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><!-- Bibliographic citiation of the notes-->The notes of the framestory "Wat
+                    is liefde zonder verleiding", part of the collection of stories "Wat is liefde
+                    zonder verleiding" door Raymond Brulez</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p><!-- Detailed description of the purpose for which this document is encoded, together with
+     information concerning the encoding practice.--></p>
+            </projectDesc>
+            <editorialDecl>
+                <p>
+                    <!-- details about the editorial principles and practice applied during the encoding of the ts -->
+                </p>
+            </editorialDecl>
+            <tagsDecl>
+                <rendition xml:id="blackink"/>
+                <rendition xml:id="deepblackink"/>
+                <rendition xml:id="greypencil"/>
+                <rendition xml:id="bluepencil"/>
+                <rendition xml:id="redpencil"/>
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date notBefore="1929-08-16">16 August 1929</date>
+                <date notAfter="1930-05-12">12 May 1930</date>
+                <!-- specify date! -->
+            </creation>
+            <langUsage>
+                <language ident="nl" usage="80">Dutch</language>
+                <language ident="fr" usage="10">French</language>
+                <language ident="la" usage="10">Latin</language>
+            </langUsage>
+            <handNotes>
+                <handNote scope="major" medium="blueblack_ink" xml:id="RB"/>
+                <handNote medium="deepblack_ink"/>
+                <handNote medium="grey_pencil"/>
+                <handNote medium="blue_pencil"/>
+                <handNote medium="red_pencil"/>
+            </handNotes>
+            <listTranspose>
+                <transpose>
+                    <ptr/>
+                </transpose>
+            </listTranspose>
+        </profileDesc>
+        <revisionDesc>
+            <change notBefore="2015-06-12" who="#EB">Start encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text xml:lang="nl" xml:id="liefde_ns">
+        <front>
+            <div type="page" n="1" rend="recto">
+                <pb n="01r"/>
+                <p>
+                    <add place="marginleft" hand="#RB" rend="blue pencil" resp="#EB">Op. 3
+                        <lb/>Handschrift</add><!-- indicate empty lines? -->
+                    <hi rend="red pencil">S<del type="crossedOut" hand="#RB" rend="grey pencil"
+                            resp="#EB">C</del>HEHERAZADE</hi>
+                    <lb/><hi rend="underline2">"<retrace>S</retrace>heherazade"</hi>
+                    <lb/>of <lb/><hi rend="underline">Literatuur als Losprijs</hi>
+                </p>
+                <p>
+                    <del type="crossedOut" rend="blueblack ink" hand="#RB" resp="#EB">Novelle</del>
+                    <add place="inline" rend="blueblack ink" hand="#RB" resp="#EB">Verhaal.</add>
+                    <lb/>door <add place="marginright" hand="#RB" resp="EB" rend="black ink">eerste
+                        gedacht: <retrace>1</retrace><del type="overwritten" hand="#RB"
+                            rend="black ink" resp="#EB">3</del><add place="overwritten" hand="#RB"
+                            rend="black ink" resp="#EB">6</add> Aug 1929</add>
+                    <lb/>Raymond Brulez <lb/><add place="marginleft" hand="#RB" rend="black ink"
+                        resp="#EB">Eerste gedacht: in de <lb/>Kursaal te Oostende
+                            <retrace>op</retrace>
+                        <add place="supralinear" hand="#RB" rend="black ink" resp="#EB">16</add>
+                        Augustus <lb/><add place="inline" hand="#RB" rend="blueblack ink" resp="#EB"
+                            >Concert (<sic>Rymsky</sic> Korsakof)</add> 1929. <lb/>Brugge
+                        <lb/>Geschreven van Augustus 1929 <lb/>tot <lb/>Maart 1930.</add>
+                </p>
+                <p> de grammofoon : de doos van <lb/>Pandora waarui<retrace>t</retrace>
+                        Shiriar<unclear>s</unclear>
+                    <lb/><unclear>dxxx</unclear> steeds ge<unclear>boren</unclear>
+                    <unclear>worden</unclear>. </p>
+            </div>
+
+            <div type="page" n="2" rend="recto">
+                <pb n="02r"/>
+                <p><!-- how to indicate that this sheet only is written (mostly) on a typewriter? In other words: where to place @hand="typist"? -->
+                    <hi rend="underline">Handschrift</hi> : <add hand="#RB" rend="grey pencil"
+                        place="infralinear" resp="#EB">Voor <unclear>Salm</unclear> Literatuur
+                        <lb/>Tentoonstelling Brussel</add>
+                    <!-- some empty lines -->
+                    <lb/>S H E H E R A Z A D E <lb/>of <lb/>Literatuur als Losprijs <!-- some empty lines -->
+                    <lb/>door <lb/>RAYMOND BRULEZ <!-- some empty lines -->
+                    <lb/>adres: 10 Joe Englishpark <lb/>St.Michiels-Brugge </p>
+            </div>
+        </front>
+
+        <body>
+            <div>
+                <head type="main">Sheherazade <del type="crossedOut" hand="#RB" rend="black ink"
+                        resp="#EB">of</del>
+                    <lb/>" Literatuur als Losprijs</head>
+                <fw type="pageNum" rend="blue pencil" place="marginleft">1</fw>
+                <!-- how to encode the line that separates the title from the running text? -->
+                <head type="sub"><hi rend="underline2">Sultan Shiriar</hi></head>
+                <note>The subtitle with Shiriar's name is highlighted with red pencil.</note>
+                <p style="text-indent: 50px;">Wat is liefde zonder verleiding?</p>
+                <p style="text-indent: 50px;">Een geenszins benijdenswaardig lot, dat, <lb/>helaas,
+                    Shiriar, <del type="crossedOut" hand="#RB" rend="black ink" resp="EB">den</del>
+                    Sultan van Arabië be<lb rend="hyphen"/>schoren <del type="crossedOut" hand="#RB"
+                        rend="black ink" resp="#EB">was.</del>
+                    <add place="inline" hand="#RB" rend="black ink" resp="#EB">is.</add>
+                </p>
+                <p style="text-indent: 50px;">
+                    <del type="crossedOut" rend="black ink" hand="#RB" resp="#EB">Dit kwam van
+                            <unclear>een</unclear></del>
+                    <del type="crossedOut" hand="#RB" rend="black ink" resp="#EB"><add
+                            place="supralinear" hand="#RB" rend="black ink" resp="#EB">Gevolg van
+                            een</add></del>
+                    <add place="supralinear" hand="#RB" rend="black ink" resp="#EB">De</add> te
+                    streng doorgedreven <lb/>rationalisatie van zijn<del type="crossedOut"
+                        hand="#RB" rend="black ink" resp="#EB">e opvoeding</del>
+                    <del type="crossedOut" hand="#RB" rend="black ink" resp="#EB"><add
+                            place="infralinear" hand="#RB" rend="black ink" resp="#EB"
+                                >prins<unclear>e</unclear>lijke jeugd</add></del><add
+                        place="supralinear" hand="#RB" rend="black ink" resp="#EB">prinsenjeugd <del
+                            type="instantcorrection" hand="#RB" rend="black ink" resp="#EB"
+                            >heeft</del> had dit met zich
+                        meegebracht<!-- the word 'meegebracht' is written below the rest of the sentence, due to lack of space. Enode <lb/>? Also: encode damaged paper?--></add>.
+                        Zo<retrace>o</retrace>als <unclear reason="damage">alle</unclear>
+                    <lb/>staten die aan het "moderniseren" slaan <unclear reason="damage"
+                        >x</unclear>
+                    <lb/>had de <del type="crossedOut" hand="#RB" rend="black ink" resp="#EB"
+                        >Staat</del>
+                    <add place="supralinear" hand="#RB" rend="blueblack ink" resp="#EB"><unclear>het
+                            "xge</unclear></add> Ara<retrace>b</retrace>ië<add place="inline"
+                        hand="#RB" rend="black ink" resp="#EB">"</add> wetenschappelijke methoden
+                    <lb/>toegepast op een gebied waar <del type="crossedOut" hand="#RB"
+                        rend="black ink" resp="#EB">het</del>
+                    <add place="supralinear" hand="#RB" rend="black ink" resp="#EB">deze</add>
+                    weinig van <lb/>pas kwam<add place="inline" hand="#RB" rend="black ink"
+                        resp="#EB">en</add> zoo o.m <del type="crossedOut" hand="#RB"
+                        rend="black ink" resp="#EB">op</del>
+                    <add place="supralinear" hand="#RB" rend="black ink" resp="#EB">in</add> d<retrace>e</retrace> sexueele opvoeding van 
+                    <lb/>den jongen prins.
+                </p>
+            </div>
+
+        </body>
+    </text>
+</TEI>
