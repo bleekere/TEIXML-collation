@@ -104,7 +104,7 @@
         <language ident="la" usage="10">Latin</language>
       </langUsage>
       <handNotes>
-        <handNote scope="major" medium="black_ink" xml:id="typist"/>
+        <handNote scope="major" medium="black_ink"/>
         <!-- xml:id="Brulez" of xml:id="typist"?-->
         <handNote medium="black_ink"/>
         <handNote medium="blueblack_ink"/>
