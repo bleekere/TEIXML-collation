@@ -145,8 +145,8 @@
             <head type="main">SHEHERAZADE</head>
             <lb/>
             <head type="sub">
-              <del rend="grey pencil" hand="#RB" resp="#EB">of <lb/>"Literatuur als Lospri<del
-                  type="overwritten" rend="black ink" hand="#typist" resp="#EB"><choice>
+              <del type="crossedOut" rend="grey pencil" hand="#RB" resp="#EB">of <lb/>"Literatuur als Lospri<del
+                  type="instantcorrection" rend="black ink" hand="#typist" resp="#EB"><choice>
                     <unclear>a</unclear>
                     <unclear>d</unclear>
                   </choice></del><add place="overwritten" hand="#RB" rend="black ink" resp="#EB"
@@ -186,7 +186,7 @@
                   hand="#RB" rend="blue pencil underline" resp="#EB">het</add><!-- use <restore>? Brulez wrote 'het', changed this to 'den' 
          and then decided upon 'het' again -->
                 <lb/>de kikvorschlarve en <hi rend="blue pencil underline"><del type="overwritten"
-                    rend="deepblack ink" hand="#RB" resp="#EB"><unclear>h</unclear></del><add
+                    rend="deepblack ink" hand="#RB" resp="#EB">h</del><add
                     place="overwritten" resp="#EB" hand="#RB" rend="deepblack ink">d</add>e<del
                     type="overwritten" rend="deepblack ink" hand="#RB" resp="#EB">t</del><add
                     place="overwritten" resp="#EB" hand="#RB" rend="deepblack ink">n</add></hi>
