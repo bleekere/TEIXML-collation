@@ -133,7 +133,7 @@
     </revisionDesc>
   </teiHeader>
 
-  <text xml:lang="nl" xml:id="liefde" xmlns="">
+  <text xml:lang="nl" xml:id="liefde-tsa" xmlns="">
     <front>
       <!-- No title page of typescript -->
     </front>
