@@ -5,10 +5,15 @@ root = tree.getroot()
 # opvangen van actie:
 firstPage = root.find(".//div[@type='page']")
 # query firstPage met lxml (. is belangrijk, verwijst naar eerste div als root)
-elements = firstPage.xpath(".//text()")
-for element in elements:
-    print(element)
-    print(element.getparent().tag)
+textelements = firstPage.xpath(".//text()")
+for textelement in textelements:
+    # if value of place == overwritten, ignore text and tag
+    place = textelement.getparent().get('place')
+    if place == "overwritten" and textelement.is_tail == False:
+        pass
+    else:
+        print(textelement)
+
 
 
 
