@@ -4,9 +4,16 @@ file = open("country_data.xml")
 data = file.read()
 tree = ElementTree.fromstring(data)
 rank = tree.xpath('.//rank')[0]
-x = rank
-while x != None:
-    x = x.getparent()
-    if x != None:
-        print(x.tag)
+input = rank
+output = []
+while input != None:
+    input = input.getparent()
+    if input != None:
+        output.append(input)
+print(output)
+
+
+
+
+
 
