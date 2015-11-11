@@ -8,6 +8,7 @@ firstPage = root.find(".//div[@type='page']")
 elements = firstPage.xpath(".//text()")
 for element in elements:
     print(element)
+    print(element.getparent().tag)
 
 
 
