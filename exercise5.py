@@ -10,13 +10,9 @@ firstPage = root.find(".//div[@type='page']")
 textelements = firstPage.xpath(".//text()")
 for textelement in textelements:
     parents = finding_parents(textelement)
-    elementList = [tag for tag in parents if tag.get("place") == "overwritten"]
-    print(elementList)
-    # add = textelement.getparent().get('place')
-    # if place == "overwritten" and textelement.is_tail == False:
-      #  pass
-    # else:
-      #  print(textelement)
+    first_or_default = next((tag for tag in parents if tag.get("place") == "overwritten"), None)
+    if first_or_default != None and not textelement.is_tail:
+        print(textelement)
     # if value of type = instantcorrection
     # type = textelement.getparent().get('type')
     # if type == 'instant correction':
