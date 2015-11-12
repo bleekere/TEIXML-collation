@@ -12,7 +12,10 @@ for textelement in textelements:
     parents = finding_parents(textelement)
     first_or_default = next((tag for tag in parents if tag.get("place") == "overwritten"), None)
     if first_or_default != None and not textelement.is_tail:
+        pass
+    else:
         print(textelement)
+
     # if value of type = instantcorrection
     # type = textelement.getparent().get('type')
     # if type == 'instant correction':
