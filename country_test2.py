@@ -1,25 +1,25 @@
 # import lxml library
 from lxml import etree as ElementTree
 # genereer data voor input later
-file = open("country_data.xml")
+file = open('country_data.xml')
 data = file.read()
 tree = ElementTree.fromstring(data)
 rank = tree.xpath('.//rank')[0]
 
 
-def finding_parent(input):
+def finding_parents(input):
     # maak een lege lijst
     output = []
-    # zolang de input een parent heeft, get parent
+    # get parent of input
     while input != None:
         input = input.getparent()
-        # voeg steeds een element toe aan de lijst 'output' tot en met de root (bij root, parent=None)
+        # wanneer input geen parent heeft (root bereikt bij parent=None)
         if input != None:
             output.append(input)
-    print(output)
+    return output
 
-
-finding_parent(rank)
+parents = finding_parents(rank)
+print(parents)
 
 
 
