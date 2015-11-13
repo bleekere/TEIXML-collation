@@ -37,6 +37,9 @@ for textNode in textNodes:
             continue
         else:
             continue
+    firstTag = next((tag for tag in parents if tag.tag == "add"), None)
+    if firstTag is not None and not textNode.is_tail:
+        continue
     print(textNode)
 
 
