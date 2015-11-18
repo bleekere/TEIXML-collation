@@ -1,10 +1,25 @@
 # import finding_parents
-from finding_parents_method import finding_parents
+from finding_parents_function import finding_parents
 # import lxml Element Tree
 from lxml import etree as ElementTree
-tree = ElementTree.parse("xml/liefde-tsa.xml")
-root = tree.getroot()
-# opvangen van actie:
-sentenceList= root.xpath(".//div[@type='page']/p/s")
-# query firstPage met lxml (. is belangrijk, verwijst naar eerste div als root)
-print(ElementTree.dump(sentenceList[2]))
+from flowchart import FlowChartElement
+def firstTag(textNode, *args):
+    parents = finding_parents(textNode)
+    delTag = next((element for element in parents if element.tag == "del"), None)
+    return delTag is not None and not textNode.is_tail
+
+def main():
+    tree = ElementTree.parse("xml/liefde-tsa.xml")
+    root = tree.getroot()
+    # opvangen van actie:
+    sentenceList= root.xpath(".//div[@type='page']/p/s[2]/text()")
+    example = sentenceList[0]
+    if_parent_has_tag_del = FlowChartElement(firstTag)
+    print(if_parent_has_tag_del.evaluate(example))
+
+main()
+
+
+
+
+
