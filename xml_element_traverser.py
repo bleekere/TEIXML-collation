@@ -1,6 +1,9 @@
 # XML Element Traverser
 # Class for traversing a XML element tree using a visitor as a callback
 # author: Ronald Haentjens Dekker
+from enum import Enum
+
+Iteration = Enum('Iteration', 'CONTINUE STOP')
 
 
 class XMLElementTraverser(object):
@@ -9,6 +12,8 @@ class XMLElementTraverser(object):
 
     def traverse(self, xml_element):
         for child in xml_element:
+            if not self.xml_element_visitor.pre_visit_element(child) == Iteration.CONTINUE:
+                continue
             self.xml_element_visitor.visit_element(child)
             if child.text:
                 self.xml_element_visitor.visit_text(child.text)
