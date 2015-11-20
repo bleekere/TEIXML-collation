@@ -11,19 +11,14 @@ class XMLElementVisitor(object):
                 return Iteration.STOP
             elif xml_element.get("type") == "instant correction" and xml_element.getnext().get("place") != "overwritten":
                 return Iteration.STOP
-            else:
-                return Iteration.CONTINUE
         elif xml_element.tag == "add":
             if xml_element.get("place") != "overwritten":
                 return Iteration.STOP
-            elif xml_element.get("place") is "overwritten" and xml_element.getprevious().get("type") is not "overwritten":
+            elif xml_element.get("place") == "overwritten" and xml_element.getprevious().get("type") != "overwritten":
                 return Iteration.STOP
-            else:
-                return Iteration.CONTINUE
         elif xml_element.tag == "unclear" and xml_element.getprevious() is not None and xml_element.getprevious().tag == "unclear":
             return Iteration.STOP
-        else:
-            return Iteration.CONTINUE
+        return Iteration.CONTINUE
 
 
     def visit_element(self, xml_element):
