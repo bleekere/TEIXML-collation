@@ -14,12 +14,14 @@ class XMLElementVisitor(object):
             else:
                 return Iteration.CONTINUE
         elif xml_element.tag == "add":
-                if xml_element.get("place") != "overwritten":
-                    return Iteration.STOP
-                elif xml_element.get("place") is "overwritten" and xml_element.getprevious().get("type") is not "overwritten":
-                    return Iteration.STOP
-                else:
-                    return Iteration.CONTINUE
+            if xml_element.get("place") != "overwritten":
+                return Iteration.STOP
+            elif xml_element.get("place") is "overwritten" and xml_element.getprevious().get("type") is not "overwritten":
+                return Iteration.STOP
+            else:
+                return Iteration.CONTINUE
+        elif xml_element.tag == "unclear" and xml_element.getprevious() is not None and xml_element.getprevious().tag == "unclear":
+            return Iteration.STOP
         else:
             return Iteration.CONTINUE
 
