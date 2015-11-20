@@ -7,28 +7,21 @@ class XMLElementVisitor(object):
     def pre_visit_element(self, xml_element):
         print("Visiting tag: "+str(xml_element))
         if xml_element.tag == "del":
-            if xml_element.get("type") == "overwritten":
-                if xml_element.getnext().get("place") == "overwritten":
-                    return Iteration.CONTINUE
-                else:
-                    if xml_element.get("type") == "instant correction":
-                        if xml_element.getnext().get("place") == "overwritten":
-                            return Iteration.STOP
-                        else:
-                            return Iteration.CONTINUE
+            if xml_element.get("type") == "overwritten" and xml_element.getnext().get("place") != "overwritten":
+                return Iteration.STOP
+            elif xml_element.get("type") == "instant correction" and xml_element.getnext().get("place") != "overwritten":
+                return Iteration.STOP
             else:
                 return Iteration.CONTINUE
-        else:
-            if xml_element.tag == "add":
-                if xml_element.get("place") == "overwritten":
-                    if xml_element.getprevious().get("type") == "overwritten":
-                        return Iteration.STOP
-                    else:
-                        return Iteration.CONTINUE
-                else:
+        elif xml_element.tag == "add":
+                if xml_element.get("place") != "overwritten":
                     return Iteration.STOP
-            else:
-                return Iteration.CONTINUE
+                elif xml_element.get("place") is "overwritten" and xml_element.getprevious().get("type") is not "overwritten":
+                    return Iteration.STOP
+                else:
+                    return Iteration.CONTINUE
+        else:
+            return Iteration.CONTINUE
 
 
     def visit_element(self, xml_element):
