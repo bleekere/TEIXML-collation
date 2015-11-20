@@ -5,6 +5,9 @@ from xml_element_traverser import XMLElementTraverser
 
 
 class XMLElementVisitor(object):
+    def pre_visit_element(self, xml_element):
+        return True
+
     def visit_element(self, xml_element):
         print("Opening tag: "+str(xml_element))
 

@@ -9,6 +9,8 @@ class XMLElementTraverser(object):
 
     def traverse(self, xml_element):
         for child in xml_element:
+            if not self.xml_element_visitor.pre_visit_element(child):
+                continue
             self.xml_element_visitor.visit_element(child)
             if child.text:
                 self.xml_element_visitor.visit_text(child.text)
