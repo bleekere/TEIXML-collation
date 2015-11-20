@@ -1,12 +1,12 @@
 # XML Element Traverser example
 # author: Ronald Haentjens Dekker
 from lxml import etree as ElementTree
-from xml_element_traverser import XMLElementTraverser
+from xml_element_traverser import XMLElementTraverser, Iteration
 
 
 class XMLElementVisitor(object):
     def pre_visit_element(self, xml_element):
-        return True
+        return Iteration.CONTINUE
 
     def visit_element(self, xml_element):
         print("Opening tag: "+str(xml_element))
