@@ -12,7 +12,7 @@ class XMLElementVisitor(object):
         if xml_element.tag == "del":
             if xml_element.get("type") == "overwritten" and xml_element.getnext().get("place") != "overwritten":
                 return Iteration.STOP
-            elif xml_element.get("type") == "instant correction" and xml_element.getnext().get("place") != "overwritten":
+            elif xml_element.get("type") == "instant correction" and xml_element.getnext().get("place") == "overwritten":
                 return Iteration.STOP
         elif xml_element.tag == "add":
             if xml_element.get("place") != "overwritten":
@@ -40,7 +40,7 @@ def main():
     # input
     tree = ElementTree.parse("xml/liefde-tsa.xml")
     root = tree.getroot()
-    sentence = root.xpath(".//s[@n='B917_2bis_B5_tsA_Liefde,[003]']")
+    sentence = root.xpath(".//s[@n='B917_2bis_B5_tsA_Liefde,[004]']")
     # output
     text_file = open("text_file", "w")
     # bewerkingen
