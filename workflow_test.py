@@ -25,7 +25,8 @@ class XMLElementVisitor(object):
 
 
     def visit_element(self, xml_element):
-        pass
+        if xml_element.tag == "lb":
+            self.plain_text_file.write("\n")
 
     def visit_text(self, text):
         normalised_text = " ".join(text.split())
