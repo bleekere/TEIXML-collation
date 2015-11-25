@@ -4,8 +4,11 @@ from xml_element_traverser import XMLElementTraverser, Iteration
 
 
 class XMLElementVisitor(object):
+    # define explicit constructor (overruling the default constructur) with one parameter
+    def __init__(self, plain_text_file):
+        # assign parameter to property of class
+        self.plain_text_file = plain_text_file
     def pre_visit_element(self, xml_element):
-        print("Visiting tag: "+str(xml_element))
         if xml_element.tag == "del":
             if xml_element.get("type") == "overwritten" and xml_element.getnext().get("place") != "overwritten":
                 return Iteration.STOP
@@ -22,22 +25,29 @@ class XMLElementVisitor(object):
 
 
     def visit_element(self, xml_element):
-        print("Opening tag: "+str(xml_element))
+        pass
 
     def visit_text(self, text):
-        print(text)
+        self.plain_text_file.write(text)
 
     def post_visit_element(self, xml_element):
-        print("Closing tag: "+str(xml_element))
+        pass
 
 
 def main():
+    # input
     tree = ElementTree.parse("xml/liefde-tsa.xml")
     root = tree.getroot()
     sentence = root.xpath(".//s[@n='B917_2bis_B5_tsA_Liefde,[003]']")
-    visitor = XMLElementVisitor()
+    # output
+    text_file = open("text_file", "w")
+    # bewerkingen
+    visitor = XMLElementVisitor(text_file)
     traverser = XMLElementTraverser(visitor)
     traverser.traverse(sentence)
+    # output file sluiten
+    text_file.close()
+
 
 
 main()
