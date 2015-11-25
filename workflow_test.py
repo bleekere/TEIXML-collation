@@ -17,7 +17,7 @@ class XMLElementVisitor(object):
         elif xml_element.tag == "add":
             if xml_element.get("place") != "overwritten":
                 return Iteration.STOP
-            elif xml_element.get("place") == "overwritten" and xml_element.getprevious().get("type") != "overwritten":
+            elif xml_element.get("place") == "overwritten" and xml_element.getprevious().get("type") == "overwritten":
                 return Iteration.STOP
         elif xml_element.tag == "unclear" and xml_element.getprevious() is not None and xml_element.getprevious().tag == "unclear":
             return Iteration.STOP
@@ -28,7 +28,8 @@ class XMLElementVisitor(object):
         pass
 
     def visit_text(self, text):
-        self.plain_text_file.write(text)
+        normalised_text = " ".join(text.split())
+        self.plain_text_file.write(normalised_text)
 
     def post_visit_element(self, xml_element):
         pass
