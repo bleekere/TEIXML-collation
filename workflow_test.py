@@ -65,4 +65,32 @@ def main():
 
 
 
-main()
+# main()
+# OF.. met loop?! NEE.
+# OF.. met user input?
+
+def loop_test2():
+    file_name = input("Enter the file name of the transcription: ")
+    if file_name == "liefde-tsa":
+        tree = ElementTree.parse("xml/liefde-tsa.xml")
+        root = tree.getroot()
+        first_page = root.xpath("./text//div[@n='03r']")
+        text_file = open("text_file_tsa", "w")
+        visitor = XMLElementVisitor(text_file)
+        traverser = XMLElementTraverser(visitor)
+        traverser.traverse(first_page)
+        text_file.close()
+    elif file_name == "liefde-tsb":
+        tree = ElementTree.parse("xml/liefde-tsb.xml")
+        root = tree.getroot()
+        first_page = root.xpath("./text//div[@n='02r']")
+        text_file = open("text_file_tsb", "w")
+        visitor = XMLElementVisitor(text_file)
+        traverser = XMLElementTraverser(visitor)
+        traverser.traverse(first_page)
+        text_file.close()
+    else:
+        print("File name not correct.")
+
+
+loop_test2()
