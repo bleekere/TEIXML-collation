@@ -40,20 +40,29 @@ class XMLElementVisitor(object):
 
 
 def main():
-    # input
-    tree = ElementTree.parse("xml/liefde-tsa.xml")
-    root = tree.getroot()
-    sentence = root.xpath("./text//div[@n='01r']")
-    # output
-    text_file = open("text_file", "w")
-    # bewerkingen
-    visitor = XMLElementVisitor(text_file)
-    traverser = XMLElementTraverser(visitor)
-    traverser.traverse(sentence)
-    # output file sluiten
-    text_file.close()
+    # input  = ts_a
+    tree_tsa = ElementTree.parse("xml/liefde-tsa.xml")
+    root_tsa = tree_tsa.getroot()
+    first_page_tsa = root_tsa.xpath("./text//div[@n='01r']")
+    # input = ts_b
+    tree_tsb = ElementTree.parse("xml/liefde-tsb.xml")
+    root_tsb = tree_tsb.getroot()
+    first_page_tsb = root_tsb.xpath("./text//div[@n='01r']")
+    # output ts_a en ts_b
+    text_file_tsa = open("text_file_tsa", "w")
+    text_file_tsb = open("text_file_tsb", "w")
+    # bewerkingen ts_a
+    visitor_tsa = XMLElementVisitor(text_file_tsa)
+    traverser_tsa = XMLElementTraverser(visitor_tsa)
+    traverser_tsa.traverse(first_page_tsa)
+    # bewerkingen ts_b
+    visitor_tsb = XMLElementVisitor(text_file_tsb)
+    traverser_tsb = XMLElementTraverser(visitor_tsb)
+    traverser_tsb.traverse(first_page_tsb)
+    # output files sluiten
+    text_file_tsa.close()
+    text_file_tsb.close()
 
 
 
 main()
-
