@@ -1,7 +1,7 @@
 # een eerste test om door de flowchart te lopen
 from lxml import etree as ElementTree
 from xml_element_traverser import XMLElementTraverser, Iteration
-
+import re
 
 class XMLElementVisitor(object):
     # define explicit constructor (overruling the default constructur) with one parameter
@@ -29,7 +29,10 @@ class XMLElementVisitor(object):
             self.plain_text_file.write("\n")
 
     def visit_text(self, text):
-        normalised_text = " ".join(text.split())
+        # compile all strings with two or more whitespaces (s = whitespace class met lb, taps, etc)
+        pattern = re.compile(r'\s+')
+        # replace the occurances of the pattern with the replacement ' ' and return the string
+        normalised_text = re.sub(pattern,' ', text)
         self.plain_text_file.write(normalised_text)
 
     def post_visit_element(self, xml_element):
@@ -40,7 +43,7 @@ def main():
     # input
     tree = ElementTree.parse("xml/liefde-tsa.xml")
     root = tree.getroot()
-    sentence = root.xpath(".//s[@n='B917_2bis_B5_tsA_Liefde,[004]']")
+    sentence = root.xpath("./text//div[@n='01r']")
     # output
     text_file = open("text_file", "w")
     # bewerkingen
