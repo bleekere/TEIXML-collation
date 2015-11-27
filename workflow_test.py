@@ -39,58 +39,31 @@ class XMLElementVisitor(object):
         pass
 
 
-def main():
-    # input  = ts_a
-    tree_tsa = ElementTree.parse("xml/liefde-tsa.xml")
-    root_tsa = tree_tsa.getroot()
-    first_page_tsa = root_tsa.xpath("./text//div[@n='01r']")
-    # input = ts_b
-    tree_tsb = ElementTree.parse("xml/liefde-tsb.xml")
-    root_tsb = tree_tsb.getroot()
-    first_page_tsb = root_tsb.xpath("./text//div[@n='01r']")
-    # output ts_a en ts_b
-    text_file_tsa = open("text_file_tsa", "w")
-    text_file_tsb = open("text_file_tsb", "w")
-    # bewerkingen ts_a
-    visitor_tsa = XMLElementVisitor(text_file_tsa)
-    traverser_tsa = XMLElementTraverser(visitor_tsa)
-    traverser_tsa.traverse(first_page_tsa)
-    # bewerkingen ts_b
-    visitor_tsb = XMLElementVisitor(text_file_tsb)
-    traverser_tsb = XMLElementTraverser(visitor_tsb)
-    traverser_tsb.traverse(first_page_tsb)
-    # output files sluiten
-    text_file_tsa.close()
-    text_file_tsb.close()
 
-
-
-# main()
-# OF.. met loop?! NEE.
-# OF.. met user input?
-
-def loop_test2():
-    file_name = input("Enter the file name of the transcription: ")
-    if file_name == "liefde-tsa":
-        tree = ElementTree.parse("xml/liefde-tsa.xml")
-        root = tree.getroot()
-        first_page = root.xpath("./text//div[@n='03r']")
-        text_file = open("text_file_tsa", "w")
-        visitor = XMLElementVisitor(text_file)
-        traverser = XMLElementTraverser(visitor)
-        traverser.traverse(first_page)
-        text_file.close()
-    elif file_name == "liefde-tsb":
-        tree = ElementTree.parse("xml/liefde-tsb.xml")
-        root = tree.getroot()
-        first_page = root.xpath("./text//div[@n='02r']")
-        text_file = open("text_file_tsb", "w")
-        visitor = XMLElementVisitor(text_file)
-        traverser = XMLElementTraverser(visitor)
-        traverser.traverse(first_page)
-        text_file.close()
+def collate_loop():
+    input_file_name = input("Enter the file name of the transcription: ")
+    if input_file_name == "liefde-tsa":
+        collation_input = "div[@n='03r']"
+        output_file_name = "text_file_tsa"
+        # string concatination
+        collate_groundlayer(collation_input, input_file_name, output_file_name)
+    elif input_file_name == "liefde-tsb":
+        collation_input = "div[@n='02r']"
+        output_file_name = "text_file_tsb"
+        collate_groundlayer(collation_input, input_file_name, output_file_name)
     else:
         print("File name not correct.")
 
 
-loop_test2()
+def collate_groundlayer(collation_input, input_file_name, output_file_name):
+    tree = ElementTree.parse("xml/" + input_file_name + ".xml")
+    root = tree.getroot()
+    first_page = root.xpath("./text//%s" % collation_input)
+    text_file = open("%s" % output_file_name, "w")
+    visitor = XMLElementVisitor(text_file)
+    traverser = XMLElementTraverser(visitor)
+    traverser.traverse(first_page)
+    text_file.close()
+
+
+collate_loop()
