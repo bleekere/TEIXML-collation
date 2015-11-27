@@ -39,18 +39,12 @@ class XMLElementVisitor(object):
         pass
 
 
-
 def collate_loop():
     input_file_name = input("Enter the file name of the transcription: ")
     if input_file_name == "liefde-tsa":
-        collation_input = "div[@n='03r']"
-        output_file_name = "text_file_tsa"
-        # string concatination
-        collate_groundlayer(collation_input, input_file_name, output_file_name)
+        collate_groundlayer("div[@n='03r']", input_file_name, "text_file_tsa")
     elif input_file_name == "liefde-tsb":
-        collation_input = "div[@n='02r']"
-        output_file_name = "text_file_tsb"
-        collate_groundlayer(collation_input, input_file_name, output_file_name)
+        collate_groundlayer("div[@n='02r']", input_file_name, "text_file_tsb")
     else:
         print("File name not correct.")
 
@@ -58,11 +52,11 @@ def collate_loop():
 def collate_groundlayer(collation_input, input_file_name, output_file_name):
     tree = ElementTree.parse("xml/" + input_file_name + ".xml")
     root = tree.getroot()
-    first_page = root.xpath("./text//%s" % collation_input)
+    selected_text = root.xpath("./text//%s" % collation_input)
     text_file = open("%s" % output_file_name, "w")
     visitor = XMLElementVisitor(text_file)
     traverser = XMLElementTraverser(visitor)
-    traverser.traverse(first_page)
+    traverser.traverse(selected_text)
     text_file.close()
 
 
