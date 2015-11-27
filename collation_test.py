@@ -9,8 +9,8 @@ with open("text_file_tsb", "r") as data_input:
 
 # import witnesses in collateX
 collation = Collation()
-collation.add_plain_witness("liefde-tsa", witness_a)
-collation.add_plain_witness("liefde-tsb", witness_b)
+collation.add_plain_witness("liefde-tsa", witness_a) # p[2] in div n=01r
+collation.add_plain_witness("liefde-tsb", witness_b) # p[2] in div n=01r
 
 alignment_table = collate(collation, layout="vertical")
 

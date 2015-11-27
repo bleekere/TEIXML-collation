@@ -21,6 +21,8 @@ class XMLElementVisitor(object):
                 return Iteration.STOP
         elif xml_element.tag == "unclear" and xml_element.getprevious() is not None and xml_element.getprevious().tag == "unclear":
             return Iteration.STOP
+        elif xml_element.tag == "note" or xml_element.tag == "metamark":
+            return Iteration.STOP
         return Iteration.CONTINUE
 
 
@@ -42,15 +44,16 @@ class XMLElementVisitor(object):
 def collate_loop():
     input_file_name = input("Enter the file name of the transcription: ")
     if input_file_name == "liefde-tsa":
-        collate_groundlayer("div[@n='03r']", input_file_name, "text_file_tsa")
+        collate_groundlayer("div[@n='01r']/p[3]", input_file_name, "text_file_tsa")
     elif input_file_name == "liefde-tsb":
-        collate_groundlayer("div[@n='02r']", input_file_name, "text_file_tsb")
+        collate_groundlayer("div[@n='01r']/p[3]", input_file_name, "text_file_tsb")
     else:
         print("File name not correct.")
 
 
 def collate_groundlayer(collation_input, input_file_name, output_file_name):
-    tree = ElementTree.parse("xml/" + input_file_name + ".xml")
+    parser = ElementTree.XMLParser(remove_comments=True, remove_blank_text=True)
+    tree = ElementTree.parse("xml/" + input_file_name + ".xml", parser)
     root = tree.getroot()
     selected_text = root.xpath("./text//%s" % collation_input)
     text_file = open("%s" % output_file_name, "w")
