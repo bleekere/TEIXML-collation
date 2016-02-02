@@ -91,7 +91,8 @@
                 <language ident="la" usage="10">Latin</language>
             </langUsage>
             <handNotes>
-                <handNote scope="major" medium="black_ink" xml:id="typist"/>
+                <handNote scope="major" medium="black_ink"/>
+                <!-- xml:id="typist" verwijderd om code te laten lopen -->
                 <handNote medium="black_ink"/>
                 <handNote medium="blueblack_ink"/>
                 <handNote medium="deepblack_ink"/>
@@ -102,23 +103,25 @@
             <listTranspose>
                 <transpose>
                     <ptr target="#trans2_tsB_02r"/>
-                    <ptr target="#trans1_tsB_02r"/> 
+                    <ptr target="#trans1_tsB_02r"/>
                 </transpose>
             </listTranspose>
         </profileDesc>
         <revisionDesc/>
     </teiHeader>
-    <text xml:lang="nl" xml:id="liefde-tsb" xmlns="">
+    <text xml:lang="nl" xmlns="">
+        <!--  xml:id="liefde-tsb" verwijderd om code te laten lopen -->
         <front>
             <!-- Encode two title pages of typescript? -->
         </front>
         <body>
-            <div type="page" rend="recto" n="1r">
-                <delSpan spanTo="#tsB_1r" type="crossedOut" rend="grey pencil" hand="#RB" resp="#EB"/>
+            <div type="page" rend="recto" n="01r">
+                <delSpan spanTo="#tsB_01r" type="crossedOut" rend="grey pencil" hand="#RB"
+                    resp="#EB"/>
                 <head type="main">SHEHERAZADE</head>
                 <lb/>
                 <head type="sub">of <lb/>" Literatuur als Losprijs "</head>
-                <anchor xml:id="tsB_1r"/>
+                <anchor xml:id="tsB_01r"/>
                 <!-- hoe lijn coderen? -->
                 <p style="text-indent: 50px;"> Wat is Liefde zonder verleiding ? </p>
                 <p style="text-indent: 50px;"> Een<add place="inline" rend="deepblack ink"
@@ -161,7 +164,7 @@
                         >w</add>erd prins Shiriar in de intiemste <lb/>geheimen der Natuur
                         ingewijd.<del type="instantcorrection" hand="#typist" rend="black ink"
                         resp="#EB">D</del></p>
-                
+
                 <p style="text-indent: 50px;">Daar de uitslag dezer lessen bevredigend was<add
                         place="inline" rend="deepblack ink" hand="#RB" resp="#EB">,</add> werd
                     Shiriar , <lb/>op het einde van het schooljaar<add place="inline"
@@ -174,9 +177,9 @@
                     Zobeïde een<add place="inline" rend="deepblack ink" hand="#RB" resp="#EB"
                         >e</add> prinses <lb/>van een naburig land, ten einde de onderhandelingen
                     over een<add place="inline" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            ref="#tsB_1r_margin1"/></add>
+                            ref="#tsB_01r_margin1"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_1r_margin1">7</metamark></add><note>Dit teken verwijst naar
+                            xml:id="tsB_01r_margin1">7</metamark></add><note>Dit teken verwijst naar
                         de paginanummers van de drukproef.</note> handels<lb rend="hyphen"/>tractaat
                     te bevorderen en de clausule der " meest begunstigde natie" <lb/>te <del
                         type="crossedOut" rend="deepblack ink" hand="#RB" resp="#EB">kunnen</del>
@@ -208,7 +211,7 @@
                         rend="black ink" resp="#EB">a</add>ne zou geplaatst worden. Daar de vizier
                     van Onderwijs aan dit <lb/>verlangen, hetwelk - naar hij beweerde - " ongrondwettelijk"was,<!-- of spaties coderen? -->
                     <lb/>geen gevolg wilde geven, ging Zobeide maandenlang mokken tegen haar
-                        <lb/>echtegenoot<add place="inline" rend="deepblack ink" hand="#RB"
+                        <lb/>echtgenoot<add place="inline" rend="deepblack ink" hand="#RB"
                         resp="#EB">,</add>omdat hij niet, stante <add place="inline"
                         rend="deepblack ink" hand="#RB" resp="#EB">p</add>ede, het portefeuille van
                     den <lb/>onwilligen vizier terugge<add place="supralinear" rend="deepblack ink"
@@ -242,11 +245,11 @@
                     aan den klant opgeeft :</p>
                 <p> " Afternoon Tea " , " Blue Girl ", " Un Caprice "<add place="inline"
                         rend="deepblack ink" hand="#RB" resp="#EB">,</add>of<add place="inline"
-                        hand="#RB" rend="grey pencil" resp="#EB"><metamark ref="tsB_1r_margin2"
+                        hand="#RB" rend="grey pencil" resp="#EB"><metamark ref="tsB_01r_margin2"
                         /></add><note>Dit teken verwijst naar de paginanummering van de
                         drukproef.</note>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_1r_margin2">8</metamark></add> iets dergelijks <lb/>zoo
+                            xml:id="tsB_01r_margin2">8</metamark></add> iets dergelijks <lb/>zoo
                     zegde ze, met in de stem de lichte beving der actrice die in de <lb/>rats zit :
                     " Roze Verrassing "<add place="inline" rend="deepblack ink" hand="#RB"
                         resp="#EB">,</add>
@@ -293,10 +296,10 @@
                         ambtenaar<add place="supralinear" rend="deepblack ink" hand="#RB" resp="#EB"
                         >-agronoom</add> leerde hem juist <del type="crossedOut"
                         rend="deepblack ink" hand="#RB" resp="#EB">het verschil</del>
-                    <seg type="transposition" target="tsB_1r_trans1">onder<add place="inline"
+                    <seg type="transposition" target="tsB_01r_trans1">onder<add place="inline"
                             rend="deepblack ink" hand="#RB" resp="#EB">s</add>cheiden</seg>
                     <del type="crossedOut" rend="deepblack ink" hand="#RB" resp="#EB">van</del>
-                    <lb/>rogge, tarwe en haver <anchor xml:id="tsB_1r_trans1"
+                    <lb/>rogge, tarwe en haver <anchor xml:id="tsB_01r_trans1"
                     /><!-- codering checken! -->, toen ze, <del type="crossedOut"
                         rend="deepblack ink" hand="#RB" resp="#EB">als een</del> in het koren
                     verdoken <del type="crossedOut" rend="deepblack ink" hand="#RB" resp="#EB"
@@ -318,16 +321,16 @@
                     deerne de zware naakte <lb/>borsten weer in haar jak wegstopte.</p>
             </div>
 
-            <div type="page" rend="recto" n="2r">
+            <div type="page" rend="recto" n="02r">
                 <fw type="pageNum" place="marginright">2.</fw>
                 <p style="text-indent: 50px;"> Waarachtig, <del type="crossedOut" hand="#RB"
                         rend="deepblack ink" resp="#EB">neen, </del>die haremliefde in deze kamer
                     van kussens en <lb/>boeken, kon <add place="margintop" hand="#RB"
                         rend="deepblack ink" resp="#EB">hoe langer hoe minder</add> bekoren en, als
                     een kind dat zijn zoetig<lb rend="hyphen"/>heid verwend <add><metamark
-                            ref="tsB_2r_margin1"/></add>
+                            ref="tsB_02r_margin1"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_2r_margin1">9</metamark></add><note>Dit teken verwijst naar
+                            xml:id="tsB_02r_margin1">9</metamark></add><note>Dit teken verwijst naar
                         de paginanummers van de drukproef.</note>is, <del type="crossedOut"
                         rend="deepblack ink" hand="#RB" resp="#EB">stuurde</del>
                     <add place="marginleft" rend="deepblack ink" hand="#RB" resp="#EB">begon</add>
@@ -381,10 +384,10 @@
                             ><unclear>e</unclear></del><add place="overwritten" rend="deepblack ink"
                         hand="#RB" resp="#EB">e</add>ciale films in Buenos<add place="inline"
                         rend="deepblack ink" hand="#RB" resp="#EB">-</add>Aires; <add place="inline"
-                        rend="deepblack ink" hand="#RB" resp="#EB"><metamark ref="#tsB_2r_margin2"
+                        rend="deepblack ink" hand="#RB" resp="#EB"><metamark ref="#tsB_02r_margin2"
                             >X</metamark></add>
                     <add place="marginleft" rend="deepblack ink" hand="#RB" resp="#EB"><metamark
-                            xml:id="tsB_2r_margin2">X</metamark> lieten XVIIIde eeuwsche erotische
+                            xml:id="tsB_02r_margin2">X</metamark> lieten XVIIIde eeuwsche erotische
                         tooneelstukjes opvoeren <add place="supralinear" rend="deepblack ink"
                             hand="#RB" resp="#EB">zorgvuldig</add> geën<lb rend="hyphen"/>sceneerd
                         naar ontwerpen van Fragonard en Boucher;</add> kocht<add place="inline"
@@ -396,11 +399,11 @@
                 <p style="text-indent: 50px;"> En ten einde raad<add place="inline"
                         rend="deepblack ink" hand="#RB" resp="#EB">,</add> deed men, op
                     uitdrukkelijk bevel van den <lb/>Grootvizier, een beroemden sexuoloog <seg
-                        type="transpostion" target="#tsb_2r_trans1">komen</seg> van het " In<del
+                        type="transpostion" target="#tsb_02r_trans1">komen</seg> van het " In<del
                         type="instantcorrection" rend="black ink" hand="#typist" resp="#EB"
                         >n</del><add place="overwritten" rend="black ink" hand="#typist" resp="#EB"
                         >s</add>titut <lb/>für Sexualwissenschaft " van Weenen <anchor
-                        xml:id="tsb_2r_trans1"/>. <del type="overwritten" hand="#typist"
+                        xml:id="tsb_02r_trans1"/>. <del type="overwritten" hand="#typist"
                         rend="black ink" resp="#EB">J</del><add type="overwritten" hand="#typist"
                         rend="black ink" resp="#EB">D</add>e He<del type="instantcorrection"
                         hand="#typist" rend="black ink" resp="#EB">e</del><add type="overwritten"
@@ -414,9 +417,9 @@
                         >n</del><add place="overwritten" hand="#typist" rend="black ink" resp="#EB"
                         >r</add>ganisch letsel met de lusteloosheid <lb/>van den vorst gemoeid.<add
                         place="inline" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            ref="#tsb_2r_margin3"/></add>
+                            ref="#tsb_02r_margin3"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsb_2r_margin3">10</metamark><note>Dit teken verwijst naar de
+                            xml:id="tsb_02r_margin3">10</metamark><note>Dit teken verwijst naar de
                             paginanummers van de drukproef.</note></add>
                 </p>
                 <p style="text-indent: 50px;"> " <del type="crossedOut" rend="deepblack ink"
@@ -487,10 +490,10 @@
                         rend="black ink" resp="#EB" hand="#RB">k</del><add place="overwritten"
                         hand="#RB" resp="#EB" rend="black ink">g</add>ende bij ieder<add
                         place="inline" hand="RB" rend="grey pencil" resp="#EB"><metamark
-                            ref="#tsB_2r_margin4"/></add>
+                            ref="#tsB_02r_margin4"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_2r_margin4">11</metamark></add><note>Dit teken verwijst naar
-                        de paginanummering van de drukproef.</note> verdieping dunner wordt. In
+                            xml:id="tsB_02r_margin4">11</metamark></add><note>Dit teken verwijst
+                        naar de paginanummering van de drukproef.</note> verdieping dunner wordt. In
                     <lb/>den lommer kronkelen flamingos hun lange halzen tot verliefde
                     <lb/>initialen. Drie zwanen lanterfanten op<add place="inline"
                         rend="deepblack ink" hand="#RB" resp="#EB"><metamark function="disconnect"
@@ -694,11 +697,103 @@
                         >i</add>zonders. <lb/>Het aangezi<del type="instantcorrection"
                         hand="#typist" rend="black ink" resp="#EB">p</del><add place="overwritten"
                         hand="#typist" rend="black ink" resp="#EB">c</add>ht ziekelijk bleek. De
-                        s<hi rend="updownconnect"/>chouders gebogen van deemoed of <lb/>anemie. En nerveus dat ze lijkt!...</p>
-                <p style="text-indent: 50px;">
-                    Om haar op haar gemakt te stellen, zegt de sultan : 
-                    <lb/>" U k<seg type="transpose" xml:id="trans1_tsB-02r">m</seg><seg type="transpose" xml:id="trans2_tsB_02r">o</seg>t
+                        s<hi rend="updownconnect"/>chouders gebogen van deemoed of <lb/>anemie. En
+                    nerveus dat ze lijkt!...</p>
+                <p style="text-indent: 50px;"> Om haar op haar gemakt te stellen, zegt de sultan :
+                    <lb/>" U k<seg type="transpose" xml:id="trans1_tsB-02r">m</seg><seg
+                        type="transpose" xml:id="trans2_tsB_02r">o</seg>t vermoedelijk om mijn
+                    verlangen stenografisch op te <lb/>nemen, mejuffer ?...."</p>
+                <p style="text-indent: 50px;">Maar de arm van het meisje haalt uit voor een stoot
+                        !<add place="inline" hand="#RB" rend="deepblack ink" resp="#EB"
+                    >..</add><!-- geen whitespace door ingevoegde interpunctie -->Uit <lb/>de gouden
+                    hecht van het potlood springt dreigend een dolklemmer<del type="overwritten"
+                        hand="#RB" rend="deepblack ink" resp="#EB">.</del><add place="supralinear"
+                        hand="#RB" rend="deepblack ink" resp="#EB">!</add>
+                    <lb/>Shiriar wipt op, paree<add place="supralinear" hand="#RB"
+                        rend="deepblack ink" resp="#EB">r</add>t, vat en wringt den vijandigen pols
+                    en geeft <lb/>meteen twee klinkende oorvegen <del type="crossedOut" hand="#RB"
+                        rend="deepblack ink" resp="#EB">op de wangen van</del>
+                    <add place="supralinear" hand="#RB" rend="deepblack ink" resp="#EB">aan</add>
+                    <hi rend="underline" xml:id="undo_3r">de aanvalster</hi><undo target="#undo_3r"
+                        rend="dotted"/><!-- Vincent: zo? -->, die <lb/>van haar stuk geraakt en
+                    pardoes in bezwijming valt op een hoopje <lb/>kussens.<add place="inline"
+                        hand="#RB" rend="deepblack ink" resp="#EB">..</add>
                 </p>
+                <p style="text-indent: 50px;">.... Het scheelde maar weinig !....</p>
+                <p style="text-indent: 50px;">.... Een aanslag op z'n leven !....</p>
+                <p style="text-indent: 50px;">Shiriar ademt diep <del type="crossedOut" hand="#RB"
+                        rend="deepblack ink" resp="#EB">op</del>... Een blijde trots vervult hem<add
+                        place="inline" hand="#RB" rend="deepblack ink" resp="#EB"
+                    >,</add><!-- geen whitespace door ingevoegde interpunctie -->daar <lb/>hij zich
+                        zel<del type="overwritten" hand="#RB" rend="deepblack ink" resp="#EB"
+                        >ve</del><add place="supralinear" hand="#RB" rend="deepblack ink" resp="#EB"
+                        >f</add>
+                    <del type="instant correction" hand="#typist" rend="black ink" resp="#EB"
+                        >v</del><add place="overwritten" hand="#typist" rend="black ink" resp="#EB"
+                        >g</add>ered heeft. 't Is weliswaar maar een vrouw,<add place="inline"
+                        hand="#RB" rend="grey pencil" resp="#EB"><metamark ref="#tsB_03r_margin3"
+                        /></add><add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"
+                            ><metamark xml:id="tsB_03r_margin3">14</metamark></add><note>Dit teken
+                        en nummer verwijzen naar de paginanummers van de drukproef.</note> en die
+                    <lb/>twee oorvegen gingen misschien de grenzen te buiten van het noodige
+                        <lb/>zel<del type="instant correction" hand="#typist" rend="black ink"
+                        resp="#EB">g</del><add place="overwritten" hand="#typist" resp="#EB"
+                        rend="black ink">f</add>verweer.<add place="inline" hand="#RB"
+                        rend="deepblack ink" resp="#EB"
+                    >..</add><!-- geen whitespace door ingevoegde interpunctie -->Maar de lafaards
+                    die achter haar schuilen, hij zal ze.. <lb/>Shiriar kij<del
+                        type="instant correction" hand="#typist" rend="black ink" resp="#EB"
+                        >g</del><add place="overwritten" hand="#typist" rend="black ink" resp="#EB"
+                        >k</add>t naar den gong waarvan de galm onmiddelijk dienaars en
+                    <lb/>soldaten zal doen toesnellen.<add place="inline" hand="#RB"
+                        rend="deepblack ink" resp="#EB"
+                    >..</add><!-- geen whitespace door ingevoegde interpunctie -->Eigenlijk is daar
+                    geen haast bij.<add place="inline" hand="#RB" rend="deepblack ink" resp="#EB"
+                        >...</add><!-- geen whitespace door ingevoegde interpunctie--><metamark
+                        xml:id="tsB_03r_margin4"/><note>Met een pijl wordt aangeduid dat het stuk
+                        tekst in de marge hier moet worden ingevoegd.[EB]</note><del
+                        type="crossedOut" hand="#RB" rend="deepblack ink" resp="#EB"><add
+                            place="marginleft" hand="#RB" rend="deepblack ink" resp="#EB"
+                            target="tsB_03r_margin4">De sultan wil eerst nog wat van zijn triomf
+                            genieten</add></del> De <lb/><add place="inline" hand="#RB"
+                        rend="deepblack ink" resp="#EB">"</add>would-be sultanmoordena<del
+                        type="crossedOut" hand="#RB" rend="deepblack ink" resp="#EB"
+                        >arster</del><add place="supralinear" hand="#RB" rend="deepblack ink"
+                        resp="#EB">res</add> ligt daar verslagen... Ze is niet meer <lb/>in staat
+                        he<del type="overwritten" hand="#RB" rend="deepblack ink" resp="#EB"
+                        >t</del><add place="overwritten" hand="#RB" rend="deepblack ink" resp="#EB"
+                        >m</add> naar het leven te trachten. Hij wil nog wat geheel <lb/>alleen van
+                    zijn triomf genieten. Trouwens eens dat het meisje in <lb/>de handen van het
+                    gerecht geleverd is, krijgt hij wel ooit het fijn<gap reason="illegible"
+                        unit="characters" quantity="1"/>
+                    <lb/>van de zaak te weten ? Hij kent zijn Vizier van Justit<del
+                        type="instant correction" hand="#typist" rend="black ink" resp="#EB"
+                        >e</del><add place="overwritten" hand="#typist" rend="black ink" resp="#EB"
+                        >i</add>e. Die zal <lb/>er een handje van weg hebben om de zaak te
+                    vertroebelen met het <lb/>oog op zijn eigen<del type="crossedOut" hand="#RB"
+                        rend="deepblack ink" resp="#EB">e</del>
+                    <add place="supralinear" hand="#RB" rend="deepblack ink" resp="#EB"
+                        >buitenlandsche</add> politiek<del type="crossedOut" hand="#RB"
+                        rend="deepblack ink" resp="#EB">e oogmerken</del>. Hij zal het wel weten aan
+                    <lb/>boord te leggen <metamark xml:id="tsB_03r_margin5"/><note>Met een pijl is
+                        aangegeven dat de zin in de linkermarge hier moet worden
+                        ingevoegd.</note><del type="crossedOut" hand="#RB" rend="deepblack ink"
+                        resp="#EB">alsof het een Perzisch complot is</del>
+                    <add place="marginleft" hand="#RB" resp="#EB" rend="deepblack ink"
+                        target="#tsB_03r_margin5">om uit den aanslag een <unclear>Perzisch</unclear>
+                        complot <unclear>te
+                        destilleeren</unclear><!-- controleren, moeilijk leesbaar op scan wegen logo Letterenhuis! --></add>;
+                    want die kerel <gap reason="illegible" unit="words" quantity="1"/>
+                    <lb/>belust op een oorlog met deze naburige<add place="inline" hand="#RB"
+                        resp="#EB" rend="deepblack ink">,</add> hem<del type="overwritten"
+                        hand="#RB" resp="#EB" rend="deepblack ink">,</del><add place="overwritten"
+                        hand="#RB" resp="#EB" rend="deepblack ink">-</add> Alla<del
+                        type="crossedOut" hand="#RB" resp="#EB" rend="deepblack ink">a</del>h
+                        wee<del type="instant correction" hand="#typist" rend="black ink" resp="#EB"
+                        >r</del><add place="overwritten" hand="#typist" resp="#EB" rend="black ink"
+                        >t</add> waarom<del type="overwritten" hand="#RB" resp="#EB"
+                        rend="deepblack ink">,</del><add place="overwritten" hand="#RB" resp="#EB"
+                        rend="deepblack ink">-</add> <lb/>onsympathieke natie.</p>
             </div>
         </body>
     </text>
