@@ -3,7 +3,7 @@
     <teiHeader xml:lang="en" xmlns="">
         <fileDesc>
             <titleStmt>
-                <title xml:id="liefde-tsb">Typoscript B "Wat is liefde zonder verleiding"</title>
+                <title xml:id="liefde-ts-fol">Typoscript folio "Wat is liefde zonder verleiding"</title>
                 <author xml:id="RB">
                     <name>Raymond Brulez</name>
                 </author>
@@ -56,10 +56,10 @@
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <bibl><!-- Bibliographic citiation of the typescript-->Typescript B of the
+                <bibl><!-- Bibliographic citiation of the typescript-->Folio typescript of the
                     framestory "Wat is liefde zonder verleiding", part of the collection of stories
                     "Wat is liefde zonder verleiding" door Raymond Brulez (preliminary reference:
-                    B917_2bis_B5_tsB_Liefde)</bibl>
+                    B917_2bis_B5_ts-fol_Liefde)</bibl>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -102,26 +102,26 @@
             </handNotes>
             <listTranspose>
                 <transpose>
-                    <ptr target="#trans2_tsB_02r"/>
-                    <ptr target="#trans1_tsB_02r"/>
+                    <ptr target="#trans2_ts-fol_02r"/>
+                    <ptr target="#trans1_ts-fol_02r"/>
                 </transpose>
             </listTranspose>
         </profileDesc>
         <revisionDesc/>
     </teiHeader>
     <text xml:lang="nl" xmlns="">
-        <!--  xml:id="liefde-tsb" verwijderd om code te laten lopen -->
+        <!--  xml:id="liefde-ts-fol" verwijderd om code te laten lopen -->
         <front>
             <!-- Encode two title pages of typescript? -->
         </front>
         <body>
             <div type="page" rend="recto" n="01r">
-                <delSpan spanTo="#tsB_01r" type="crossedOut" rend="grey pencil" hand="#RB"
+                <delSpan spanTo="#ts-fol_01r" type="crossedOut" rend="grey pencil" hand="#RB"
                     resp="#EB"/>
                 <head type="main">SHEHERAZADE</head>
                 <lb/>
                 <head type="sub">of <lb/>" Literatuur als Losprijs "</head>
-                <anchor xml:id="tsB_01r"/>
+                <anchor xml:id="ts-fol_01r"/>
                 <!-- hoe lijn coderen? -->
                 <p style="text-indent: 50px;"> Wat is Liefde zonder verleiding ? </p>
                 <p style="text-indent: 50px;"> Een<add place="inline" rend="deepblack ink"
@@ -177,9 +177,9 @@
                     Zobeïde een<add place="inline" rend="deepblack ink" hand="#RB" resp="#EB"
                         >e</add> prinses <lb/>van een naburig land, ten einde de onderhandelingen
                     over een<add place="inline" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            ref="#tsB_01r_margin1"/></add>
+                            ref="#ts-fol_01r_margin1"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_01r_margin1">7</metamark></add><note>Dit teken verwijst naar
+                            xml:id="ts-fol_01r_margin1">7</metamark></add><note>Dit teken verwijst naar
                         de paginanummers van de drukproef.</note> handels<lb rend="hyphen"/>tractaat
                     te bevorderen en de clausule der " meest begunstigde natie" <lb/>te <del
                         type="crossedOut" rend="deepblack ink" hand="#RB" resp="#EB">kunnen</del>
@@ -245,11 +245,11 @@
                     aan den klant opgeeft :</p>
                 <p> " Afternoon Tea " , " Blue Girl ", " Un Caprice "<add place="inline"
                         rend="deepblack ink" hand="#RB" resp="#EB">,</add>of<add place="inline"
-                        hand="#RB" rend="grey pencil" resp="#EB"><metamark ref="tsB_01r_margin2"
+                        hand="#RB" rend="grey pencil" resp="#EB"><metamark ref="ts-fol_01r_margin2"
                         /></add><note>Dit teken verwijst naar de paginanummering van de
                         drukproef.</note>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_01r_margin2">8</metamark></add> iets dergelijks <lb/>zoo
+                            xml:id="ts-fol_01r_margin2">8</metamark></add> iets dergelijks <lb/>zoo
                     zegde ze, met in de stem de lichte beving der actrice die in de <lb/>rats zit :
                     " Roze Verrassing "<add place="inline" rend="deepblack ink" hand="#RB"
                         resp="#EB">,</add>
@@ -296,10 +296,10 @@
                         ambtenaar<add place="supralinear" rend="deepblack ink" hand="#RB" resp="#EB"
                         >-agronoom</add> leerde hem juist <del type="crossedOut"
                         rend="deepblack ink" hand="#RB" resp="#EB">het verschil</del>
-                    <seg type="transposition" target="tsB_01r_trans1">onder<add place="inline"
+                    <seg type="transposition" target="ts-fol_01r_trans1">onder<add place="inline"
                             rend="deepblack ink" hand="#RB" resp="#EB">s</add>cheiden</seg>
                     <del type="crossedOut" rend="deepblack ink" hand="#RB" resp="#EB">van</del>
-                    <lb/>rogge, tarwe en haver <anchor xml:id="tsB_01r_trans1"
+                    <lb/>rogge, tarwe en haver <anchor xml:id="ts-fol_01r_trans1"
                     /><!-- codering checken! -->, toen ze, <del type="crossedOut"
                         rend="deepblack ink" hand="#RB" resp="#EB">als een</del> in het koren
                     verdoken <del type="crossedOut" rend="deepblack ink" hand="#RB" resp="#EB"
@@ -328,9 +328,9 @@
                     van kussens en <lb/>boeken, kon <add place="margintop" hand="#RB"
                         rend="deepblack ink" resp="#EB">hoe langer hoe minder</add> bekoren en, als
                     een kind dat zijn zoetig<lb rend="hyphen"/>heid verwend <add><metamark
-                            ref="tsB_02r_margin1"/></add>
+                            ref="ts-fol_02r_margin1"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_02r_margin1">9</metamark></add><note>Dit teken verwijst naar
+                            xml:id="ts-fol_02r_margin1">9</metamark></add><note>Dit teken verwijst naar
                         de paginanummers van de drukproef.</note>is, <del type="crossedOut"
                         rend="deepblack ink" hand="#RB" resp="#EB">stuurde</del>
                     <add place="marginleft" rend="deepblack ink" hand="#RB" resp="#EB">begon</add>
@@ -384,10 +384,10 @@
                             ><unclear>e</unclear></del><add place="overwritten" rend="deepblack ink"
                         hand="#RB" resp="#EB">e</add>ciale films in Buenos<add place="inline"
                         rend="deepblack ink" hand="#RB" resp="#EB">-</add>Aires; <add place="inline"
-                        rend="deepblack ink" hand="#RB" resp="#EB"><metamark ref="#tsB_02r_margin2"
+                        rend="deepblack ink" hand="#RB" resp="#EB"><metamark ref="#ts-fol_02r_margin2"
                             >X</metamark></add>
                     <add place="marginleft" rend="deepblack ink" hand="#RB" resp="#EB"><metamark
-                            xml:id="tsB_02r_margin2">X</metamark> lieten XVIIIde eeuwsche erotische
+                            xml:id="ts-fol_02r_margin2">X</metamark> lieten XVIIIde eeuwsche erotische
                         tooneelstukjes opvoeren <add place="supralinear" rend="deepblack ink"
                             hand="#RB" resp="#EB">zorgvuldig</add> geën<lb rend="hyphen"/>sceneerd
                         naar ontwerpen van Fragonard en Boucher;</add> kocht<add place="inline"
@@ -399,11 +399,11 @@
                 <p style="text-indent: 50px;"> En ten einde raad<add place="inline"
                         rend="deepblack ink" hand="#RB" resp="#EB">,</add> deed men, op
                     uitdrukkelijk bevel van den <lb/>Grootvizier, een beroemden sexuoloog <seg
-                        type="transpostion" target="#tsb_02r_trans1">komen</seg> van het " In<del
+                        type="transpostion" target="#ts-fol_02r_trans1">komen</seg> van het " In<del
                         type="instantcorrection" rend="black ink" hand="#typist" resp="#EB"
                         >n</del><add place="overwritten" rend="black ink" hand="#typist" resp="#EB"
                         >s</add>titut <lb/>für Sexualwissenschaft " van Weenen <anchor
-                        xml:id="tsb_02r_trans1"/>. <del type="overwritten" hand="#typist"
+                        xml:id="ts-fol_02r_trans1"/>. <del type="overwritten" hand="#typist"
                         rend="black ink" resp="#EB">J</del><add type="overwritten" hand="#typist"
                         rend="black ink" resp="#EB">D</add>e He<del type="instantcorrection"
                         hand="#typist" rend="black ink" resp="#EB">e</del><add type="overwritten"
@@ -417,9 +417,9 @@
                         >n</del><add place="overwritten" hand="#typist" rend="black ink" resp="#EB"
                         >r</add>ganisch letsel met de lusteloosheid <lb/>van den vorst gemoeid.<add
                         place="inline" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            ref="#tsb_02r_margin3"/></add>
+                            ref="#ts-fol_02r_margin3"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsb_02r_margin3">10</metamark><note>Dit teken verwijst naar de
+                            xml:id="ts-fol_02r_margin3">10</metamark><note>Dit teken verwijst naar de
                             paginanummers van de drukproef.</note></add>
                 </p>
                 <p style="text-indent: 50px;"> " <del type="crossedOut" rend="deepblack ink"
@@ -490,9 +490,9 @@
                         rend="black ink" resp="#EB" hand="#RB">k</del><add place="overwritten"
                         hand="#RB" resp="#EB" rend="black ink">g</add>ende bij ieder<add
                         place="inline" hand="RB" rend="grey pencil" resp="#EB"><metamark
-                            ref="#tsB_02r_margin4"/></add>
+                            ref="#ts-fol_02r_margin4"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_02r_margin4">11</metamark></add><note>Dit teken verwijst
+                            xml:id="ts-fol_02r_margin4">11</metamark></add><note>Dit teken verwijst
                         naar de paginanummering van de drukproef.</note> verdieping dunner wordt. In
                     <lb/>den lommer kronkelen flamingos hun lange halzen tot verliefde
                     <lb/>initialen. Drie zwanen lanterfanten op<add place="inline"
@@ -563,8 +563,8 @@
                         <del type="crossedOut" hand="#RB" rend="deepblack ink" resp="#EB">twee</del>
                     agenten <lb/>in burgerskledij die hem steeds voorafstapten. De branding bloei<lb
                         rend="hyphen"/>de<add place="inline" hand="#RB" rend="grey pencil"
-                        resp="#EB"><metamark ref="#tsB_3r_margin1"/></add>
-                    <add place="marginleft" xml:id="tsB_3r_margin1"><metamark>12</metamark><note>Dit
+                        resp="#EB"><metamark ref="#ts-fol_3r_margin1"/></add>
+                    <add place="marginleft" xml:id="ts-fol_3r_margin1"><metamark>12</metamark><note>Dit
                             teken verwijst naar de paginanummering van de drukproef.</note></add>
                     een rand van witte anjelieren langsheen het zeeperk. Als een her<lb
                         rend="hyphen"/>der die een kudde weidt, deed Shiriar <del type="overwritten"
@@ -636,9 +636,9 @@
                     <lb/>goede<del type="crossedOut" hand="#RB" rend="deepblack ink" resp="#EB"
                         >n</del> faam der zeekust in opspraak konden brengen "....<add
                         place="inline" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            ref="#tsB_3r_margin2"/></add>
+                            ref="#ts-fol_3r_margin2"/></add>
                     <add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"><metamark
-                            xml:id="tsB_3r_margin2">13</metamark><note>Dit teken en nummer verwijzen
+                            xml:id="ts-fol_3r_margin2">13</metamark><note>Dit teken en nummer verwijzen
                             naar de paginanummering van de drukproef.</note></add></p>
                 <p style="text-indent: 50px;"> Dan is hij weer geworden : Shiriar, de heerscher
                     aller Arabie<lb rend="hyphen"/>ren<del type="overwritten" hand="#RB"
@@ -700,8 +700,8 @@
                         s<hi rend="updownconnect"/>chouders gebogen van deemoed of <lb/>anemie. En
                     nerveus dat ze lijkt!...</p>
                 <p style="text-indent: 50px;"> Om haar op haar gemakt te stellen, zegt de sultan :
-                    <lb/>" U k<seg type="transpose" xml:id="trans1_tsB-02r">m</seg><seg
-                        type="transpose" xml:id="trans2_tsB_02r">o</seg>t vermoedelijk om mijn
+                    <lb/>" U k<seg type="transpose" xml:id="trans1_ts-fol-02r">m</seg><seg
+                        type="transpose" xml:id="trans2_ts-fol_02r">o</seg>t vermoedelijk om mijn
                     verlangen stenografisch op te <lb/>nemen, mejuffer ?...."</p>
                 <p style="text-indent: 50px;">Maar de arm van het meisje haalt uit voor een stoot
                         !<add place="inline" hand="#RB" rend="deepblack ink" resp="#EB"
@@ -731,9 +731,9 @@
                     <del type="instant correction" hand="#typist" rend="black ink" resp="#EB"
                         >v</del><add place="overwritten" hand="#typist" rend="black ink" resp="#EB"
                         >g</add>ered heeft. 't Is weliswaar maar een vrouw,<add place="inline"
-                        hand="#RB" rend="grey pencil" resp="#EB"><metamark ref="#tsB_03r_margin3"
+                        hand="#RB" rend="grey pencil" resp="#EB"><metamark ref="#ts-fol_03r_margin3"
                         /></add><add place="marginleft" hand="#RB" rend="grey pencil" resp="#EB"
-                            ><metamark xml:id="tsB_03r_margin3">14</metamark></add><note>Dit teken
+                            ><metamark xml:id="ts-fol_03r_margin3">14</metamark></add><note>Dit teken
                         en nummer verwijzen naar de paginanummers van de drukproef.</note> en die
                     <lb/>twee oorvegen gingen misschien de grenzen te buiten van het noodige
                         <lb/>zel<del type="instant correction" hand="#typist" rend="black ink"
@@ -750,11 +750,11 @@
                     >..</add><!-- geen whitespace door ingevoegde interpunctie -->Eigenlijk is daar
                     geen haast bij.<add place="inline" hand="#RB" rend="deepblack ink" resp="#EB"
                         >...</add><!-- geen whitespace door ingevoegde interpunctie--><metamark
-                        xml:id="tsB_03r_margin4"/><note>Met een pijl wordt aangeduid dat het stuk
+                        xml:id="ts-fol_03r_margin4"/><note>Met een pijl wordt aangeduid dat het stuk
                         tekst in de marge hier moet worden ingevoegd.[EB]</note><del
                         type="crossedOut" hand="#RB" rend="deepblack ink" resp="#EB"><add
                             place="marginleft" hand="#RB" rend="deepblack ink" resp="#EB"
-                            target="tsB_03r_margin4">De sultan wil eerst nog wat van zijn triomf
+                            target="ts-fol_03r_margin4">De sultan wil eerst nog wat van zijn triomf
                             genieten</add></del> De <lb/><add place="inline" hand="#RB"
                         rend="deepblack ink" resp="#EB">"</add>would-be sultanmoordena<del
                         type="crossedOut" hand="#RB" rend="deepblack ink" resp="#EB"
@@ -775,12 +775,12 @@
                     <add place="supralinear" hand="#RB" rend="deepblack ink" resp="#EB"
                         >buitenlandsche</add> politiek<del type="crossedOut" hand="#RB"
                         rend="deepblack ink" resp="#EB">e oogmerken</del>. Hij zal het wel weten aan
-                    <lb/>boord te leggen <metamark xml:id="tsB_03r_margin5"/><note>Met een pijl is
+                    <lb/>boord te leggen <metamark xml:id="ts-fol_03r_margin5"/><note>Met een pijl is
                         aangegeven dat de zin in de linkermarge hier moet worden
                         ingevoegd.</note><del type="crossedOut" hand="#RB" rend="deepblack ink"
                         resp="#EB">alsof het een Perzisch complot is</del>
                     <add place="marginleft" hand="#RB" resp="#EB" rend="deepblack ink"
-                        target="#tsB_03r_margin5">om uit den aanslag een <unclear>Perzisch</unclear>
+                        target="#ts-fol_03r_margin5">om uit den aanslag een <unclear>Perzisch</unclear>
                         complot <unclear>te
                         destilleeren</unclear><!-- controleren, moeilijk leesbaar op scan wegen logo Letterenhuis! --></add>;
                     want die kerel <gap reason="illegible" unit="words" quantity="1"/>
