@@ -41,26 +41,23 @@ class XMLElementVisitor(object):
         pass
 
 
-def collate_loop():
-    input_file_name = input("Enter the file name of the transcription: ")
-    if input_file_name == "liefde-tsa":
-        collate_groundlayer("div[@n='01r']/p[3]", input_file_name, "text_file_tsa")
-    elif input_file_name == "liefde-tsb":
-        collate_groundlayer("div[@n='01r']/p[3]", input_file_name, "text_file_tsb")
-    else:
-        print("File name not correct.")
+def main():
+    input_file = "xml/tsq-test-small.xml"
+    output_file = "xml/plain-text-tsq.txt"
+    collate_groundlayer(input_file, output_file)
 
 
-def collate_groundlayer(collation_input, input_file_name, output_file_name):
+def collate_groundlayer(input_file, output_file):
     parser = ElementTree.XMLParser(remove_comments=True, remove_blank_text=True)
-    tree = ElementTree.parse("xml/" + input_file_name + ".xml", parser)
+    tree = ElementTree.parse(input_file, parser)
     root = tree.getroot()
-    selected_text = root.xpath("./text//%s" % collation_input)
-    text_file = open("%s" % output_file_name, "w")
+#   selected_text = root.xpath("./text//%s" % collation_input)
+    text_file = open(output_file, 'w')
     visitor = XMLElementVisitor(text_file)
     traverser = XMLElementTraverser(visitor)
-    traverser.traverse(selected_text)
+    traverser.traverse(root)
     text_file.close()
 
 
-collate_loop()
+main()
+
