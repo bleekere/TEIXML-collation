@@ -1,0 +1,13 @@
+# Mac garbage
+.DS_Store
+*/.DS_Store
+
+# IPython checkpoint filse
+.ipynb_checkpoints
+
+# IPython generated digraphs
+Digraph.gv
+Digraph.gv.svg
+
+# Pycharm stuff
+.idea/*
