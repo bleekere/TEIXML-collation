@@ -4,10 +4,10 @@
 # @author: Ronald Haentjens Dekker
 
 
-from xml_collation.TextGraph import convert_superwitness_to_textgraph
-from xml_collation.collate_xml_hierarchy import convert_xml_string_into_tokens, align_tokens_and_return_superwitness, \
+from code.TextGraph import convert_superwitness_to_textgraph
+from code.collate_xml_hierarchy import convert_xml_string_into_tokens, align_tokens_and_return_superwitness, \
     convert_xml_file_into_tokens
-from xml_collation.text_graph_exporter import export_as_dot
+from code.text_graph_exporter import export_as_dot
 
 # optionally load the IPython dependencies
 try:

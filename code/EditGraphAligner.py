@@ -4,7 +4,7 @@
     This class uses dynamic programming to find the optimal alignment between
     two lists of strings/tokens given a certain scoring function.
 """
-from xml_collation.exact_match_scorer import Scorer
+from code.exact_match_scorer import Scorer
 
 
 class EditGraphNode(object):
