@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De projectielantaarn "Aladin"</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Unpublished draft</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Fragment from page 7 of the manuscript of "De projectielantaarn 'Aladin'" of Raymond
+               Brulez. Source document located in the Letterenhuis in Antwerp, Belgium. Record
+               identifier tg:lhhs:145.</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation>Transcription created for the purposes of an experiment with the automated
+            comparison of TEI-XML files in the context of the eScience project COLLaiTE.</creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="page" n="6">
+            <p><lb/><del>- Z</del>
+               <del>- Die is nog zoo gek niet als ze schijnt!...</del>
+               <lb/><del>Denkt Van Pubbel.</del>
+               <del>Z</del>
+               <del>Ze wil</del>
+               <subst>
+                  <del>Ze heeft nog</del>
+                  <add>Wat heeft die</add>
+               </subst> alleen <lb/><add>maar</add> een <subst>
+                  <del>rare</del>
+                  <add>zonderlinge</add>
+               </subst> manier om te laten verstaan dat ze door <lb/>mij wil<del>len</del>
+               onderhouden worden! .. <add>denkt Van Pubbel.</add> Zooals ieder <lb/>man die zijn
+                  oer<add>in</add>stinkt eerbiedigt permitteert <lb/><subst>
+                  <del>de eigenaar <add>directeur</add> van de Apollo bioscoop</del>
+                  <add>hij</add>
+               </subst> zich af en <lb/>toe wel eens een vluchtig <add>en voorzichtig verdoken</add>
+               buitenechtelijk <lb/>avontuurtje. En hij vraagt zich reeds af of <lb/>artikel
+               <space/> van het wetboek dat <add>het <del>mannelijke</del></add> overspel <add>van
+                  den man</add> "onder <lb/><del>het echtelijk</del>
+               <del>w</del>onder het echtelijke dak" straft wel <lb/>toepasselijk is op den glazen
+               koepel <subst>
+                  <del>van</del>
+                  <add>die</add>
+               </subst> de <lb/>bioscoop Apollo overwelft... Want waarlijk
+                     <lb/><del><unclear>x</unclear></del>
+               <del>Hij</del> al heeft ze een slag van den molen <lb/><del>z</del>
+               <subst>
+                  <del><unclear>h</unclear></del>
+                  <del>is</del>
+                  <add>die vrouw</add>
+               </subst> is in alle geval een mooie zottin! Van <lb/>Pubbel aanschouwt met de
+               ontroering <del>der</del> van het <lb/>mogelijk bezit dit <del>dit</del> verfijnd, <subst>
+                  <del>smal</del>
+                  <add><del>smal</del> aristocratisch smal</add>
+               </subst>
+               <lb/>ovalen gelaat <subst>
+                  <del>dat</del>
+                  <add><del>dat</del></add>
+               </subst> van een <del>huiverige</del> diaphane, <lb/>huiverige blankheid<subst>
+                  <add>.</add>
+                  <del>is.</del>
+               </subst>
+               <del>Haar gansch</del> De levensgloed</p>
+         </div>
+         <div type="page" n="7">
+            <p><lb/><del>sch</del> schijnt uitsluitend geconcentreerd in den <lb/>mond: rood,
+               vreemdsoortig exotisch vlindertje dat <lb/>zijn spitse uitloopende vleugels juist
+               symmetrisch <lb/>openvlerkt en in de zwarte oogen waar wacht een <lb/>diep donker dat
+               evengoed kan <subst>
+                  <del>over</del>
+                  <add>uit</add>
+               </subst>slaan <subst>
+                  <del>naar</del>
+                  <add>in</add>
+               </subst>
+               <lb/>flitsenden toorn of overglijden naar vochtig <lb/>glanzende teederheid..<subst>
+                  <del>.</del>
+                  <add>;</add>
+               </subst>
+               <add>voorlopig één roerend smeekend <lb/>"souls-appeal!"...</add></p>
+         </div>
+      </body>
+   </text>
+</TEI>
